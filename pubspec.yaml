@@ -1,0 +1,48 @@
+name: weather_app
+description: "A beautiful weather app using Clean Architecture & Provider."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  flutter_dotenv: ^5.1.0
+
+  connectivity_plus: ^6.0.3
+
+  # State Management
+  provider: ^6.1.2
+
+  # HTTP Client
+  dio: ^5.4.3+1
+
+  # Dependency Injection
+  get_it: ^7.7.0
+
+  # Local Storage (theme + last city)
+  shared_preferences: ^2.2.3
+
+  # Functional Error Handling (Either<Failure, T>)
+  dartz: ^0.10.1
+
+  # Value Equality
+  equatable: ^2.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+
